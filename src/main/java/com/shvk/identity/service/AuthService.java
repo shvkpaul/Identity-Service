@@ -26,8 +26,8 @@ public class AuthService {
         credential.setEmail(userRequest.getEmailId());
         credential.setPassword(passwordEncoder.encode(userRequest.getPassword()));
 
-        credential = repository.save(credential);
-        return "user added to the system with user id: " + credential.getId();
+        repository.save(credential);
+        return "user added to the system successfully";
     }
 
     public String generateToken(String username) {

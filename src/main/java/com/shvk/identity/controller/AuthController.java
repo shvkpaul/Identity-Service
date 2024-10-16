@@ -3,7 +3,6 @@ package com.shvk.identity.controller;
 
 import com.shvk.identity.dto.AuthRequest;
 import com.shvk.identity.dto.RegisterUserRequest;
-import com.shvk.identity.entity.UserCredential;
 import com.shvk.identity.service.AuthService;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
